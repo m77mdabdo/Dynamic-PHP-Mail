@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Send Email</title>
+    <style>
+        body { font-family: Arial; background:#f2f2f2; padding:30px; }
+        .container { max-width:600px; margin:auto; background:#fff; padding:20px; border-radius:8px; box-shadow:0 0 10px rgba(0,0,0,0.1);}
+        h2 { text-align:center; color:#333;}
+        label { display:block; margin-top:15px; font-weight:bold;}
+        input, textarea { width:100%; padding:10px; margin-top:5px; border-radius:5px; border:1px solid #ccc; box-sizing:border-box;}
+        textarea { resize:vertical; }
+        button { margin-top:20px; width:100%; padding:12px; background:#28a745; color:#fff; border:none; font-size:16px; border-radius:5px; cursor:pointer;}
+        button:hover { background:#218838;}
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Send Email Dynamically</h2>
+    <form action="send.php" method="POST">
+        <label>From Email:</label>
+        <input type="email" name="fromEmail" placeholder="from@example.com" required>
+
+        <label>From Name:</label>
+        <input type="text" name="fromName" placeholder="Your Name" required>
+
+        <label>To Email:</label>
+        <input type="email" name="toEmail" placeholder="recipient@example.com" required>
+
+        <label>To Name:</label>
+        <input type="text" name="toName" placeholder="Recipient Name" required>
+
+        <label>Subject:</label>
+        <input type="text" name="subject" placeholder="Email Subject" required>
+
+        <label>Body (HTML allowed):</label>
+        <textarea name="body" rows="8" placeholder="<h1>Hello!</h1><p>Your message here</p>" required></textarea>
+
+        <button type="submit">Send Email</button>
+    </form>
+</div>
+
+</body>
+</html>
