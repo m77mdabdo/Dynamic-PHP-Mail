@@ -19,13 +19,6 @@ Send dynamic HTML emails using **PHP Native** with **PHPMailer**. This project i
 - Composer
 - PHPMailer
 
-## Installation
-
-1. Clone the repository:
-
-```bash
-git clone https://github.com/m77mdabdo/Dynamic-PHP-Mail.git
-
 
 ## Usage
 
@@ -52,6 +45,17 @@ Validates email addresses
 Sanitizes input to prevent XSS and header injection
 
 Supports secure SMTP with TLS
+
+## Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/m77mdabdo/Dynamic-PHP-Mail.git
+
+
+
+
 
 
 
